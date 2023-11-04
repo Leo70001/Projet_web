@@ -2,7 +2,7 @@
 // Inclure le fichier de configuration
 @include 'config.php';
 
-// Démarrer la session
+// Démarrer la ses
 session_start();
 
 if (isset($_POST['submit'])) {

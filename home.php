@@ -166,7 +166,7 @@ if (isset($_POST['add_to_cart'])) {
       if($result->num_rows > 0){
          while($fetch_products = $result->fetch_assoc()){ 
    ?>
-   <form action="" class="box" method="POST">
+   <form action="cart.php" class="box" method="POST" id="product_cart">
       <div class="price">$<span><?= $fetch_products['prix_produit']; ?></span>/-</div>
       <a href="view_page.php?pid=<?= $fetch_products['id_produit']; ?>" class="fas fa-eye"></a>
       <img src="uploaded_img/<?= $fetch_products['image_produit']; ?>" alt="">
